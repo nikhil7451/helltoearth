@@ -14,7 +14,61 @@
   <body>
     <header id="home">
       <!-- nav bar -->
-      <nav></nav>
+      <nav class="navbar fixed">
+        <div class="nav-center">
+          <!-- Nav header -->
+          <div class="nav-header">
+            <img
+              src="./Images/logo.svg"
+              alt="backroads-comapany"
+              class="nav-logo"
+            />
+            <button
+              type="submit"
+              class="nav-toggle"
+              id="nav-toggle"
+              aria-label="nav-toggler"
+            >
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+          <!-- End OF NAv header -->
+          <!-- nav-bar links -->
+          <div class="nav-links" id="nav-links">
+            <a href="#home" class="nav-link scroll-link">Home</a>
+            <a href="#about" class="nav-link scroll-link">About</a>
+            <a href="#services" class="nav-link scroll-link">Services</a>
+            <a href="#featured" class="nav-link scroll-link">Featured</a>
+            <a href="#gallery" class="nav-link scroll-link">Gallery</a>
+          </div>
+          <!-- End OF nav-bar links -->
+          <!-- NAv Social Icons -->
+          <div class="nav-icons">
+            <!-- Social Icon -->
+            <a href="https://www.facebook.com/" target="_blank" class="nav-icon"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <!-- End Of Sovial Icon -->
+            <!-- Social Icon -->
+            <a
+              href="https://twitter.com/nikhil7451"
+              target="_blank"
+              class="nav-icon"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <!-- End Of Sovial Icon -->
+            <!-- Social Icon -->
+            <a
+              href="https://www.linkedin.com/in/nikhil-goel-b74948154/"
+              target="_blank"
+              class="nav-icon"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <!-- End Of Sovial Icon -->
+          </div>
+          <!-- End of nav Social Icons -->
+        </div>
+      </nav>
       <!-- nav bar -->
       <!-- hero component -->
       <div class="hero">
@@ -24,7 +78,7 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quos
             nulla aliquid voluptatem odio consectetur doloribus, eius unde.
           </p>
-          <a href="#featured" class="btn-white">explore tours</a>
+          <a href="#featured" class="btn-white scroll-link">explore tours</a>
         </div>
       </div>
       <!-- end of hero -->
@@ -39,18 +93,21 @@
       <div class="about-center section-center">
         <!-- About Image -->
         <article class="about-img">
-          <img src="./Images/about.jpeg" class="about-picture"
-            alt="about">
+          <img src="./Images/about.jpeg" class="about-picture" alt="about" />
         </article>
         <!-- end OF about Image -->
         <article class="about-info">
           <h3 class="about-title">
             explore the difference
           </h3>
-          <p class="about-text">Lorem ipsum, dolor sit amet consectetur
-            adipisicing elit. Obcaecati id accusamus quo.</p>
-          <p class="about-text">Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Id iste autem quia aspernatur ex!</p>
+          <p class="about-text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati
+            id accusamus quo.
+          </p>
+          <p class="about-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id iste
+            autem quia aspernatur ex!
+          </p>
           <a href="#" class="btn-main">Read More</a>
         </article>
       </div>
@@ -65,14 +122,15 @@
       <!-- end of title -->
       <!-- section center -->
       <div class="section-center services-center">
-
         <!-- First CArd -->
         <article class="service">
           <span class="service-icon"><i class="fas fa-wallet fa-fw"></i></span>
           <div class="service-info">
             <h4 class="service-title">Saving Money</h4>
-            <p class="service-text">Lorem ipsum, dolor sit amet consectetur
-              adipisicing elit. Corporis, nemo?</p>
+            <p class="service-text">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Corporis, nemo?
+            </p>
           </div>
         </article>
         <!-- End Of First CArd -->
@@ -81,8 +139,10 @@
           <span class="service-icon"><i class="fas fa-socks fa-fw"></i></span>
           <div class="service-info">
             <h4 class="service-title">Amazing Comfort</h4>
-            <p class="service-text">Lorem ipsum, dolor sit amet consectetur
-              adipisicing elit. Corporis, nemo?</p>
+            <p class="service-text">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Corporis, nemo?
+            </p>
           </div>
         </article>
         <!-- End Of First CArd -->
@@ -91,8 +151,10 @@
           <span class="service-icon"><i class="fas fa-tree fa-fw"></i></span>
           <div class="service-info">
             <h4 class="service-title">Endless Hiking</h4>
-            <p class="service-text">Lorem ipsum, dolor sit amet consectetur
-              adipisicing elit. Corporis, nemo?</p>
+            <p class="service-text">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Corporis, nemo?
+            </p>
           </div>
         </article>
         <!-- End Of First CArd -->
@@ -100,9 +162,8 @@
     </section>
     <!-- End Our Services  -->
 
-
     <!-- ***************Tours***** -->
-    <section class="tours" id="tours">
+    <section class="featured" id="featured">
       <!-- title -->
       <div class="title-wrapper">
         <h2 class="title">Featured<span class="subtitle">tours</span></h2>
@@ -112,7 +173,7 @@
         <!-- Single Card -->
         <article class="tour-card">
           <div class="tour-img">
-            <img src="./Images/tour-1.jpeg" class="tour-picture" alt="Swedon">
+            <img src="./Images/tour-1.jpeg" class="tour-picture" alt="Swedon" />
             <p class="tour-date">14-August-2020</p>
           </div>
           <div class="tour-footer">
@@ -121,8 +182,14 @@
             </h4>
             <!-- tour-info -->
             <div class="tour-info">
-              <p class="tour-country"><span class="tour-icon"><i class="fas
-                    fa-map"></i></span>China</p>
+              <p class="tour-country">
+                <span class="tour-icon"
+                  ><i
+                    class="fas
+                    fa-map"
+                  ></i></span
+                >China
+              </p>
               <div class="tour-details">
                 <p>6 Days</p>
                 <p>from 2100$</p>
@@ -134,7 +201,7 @@
         <!-- Single Card -->
         <article class="tour-card">
           <div class="tour-img">
-            <img src="./Images/tour-3.jpeg" class="tour-picture" alt="Swedon">
+            <img src="./Images/tour-3.jpeg" class="tour-picture" alt="Swedon" />
             <p class="tour-date">3-may-2020</p>
           </div>
           <div class="tour-footer">
@@ -143,8 +210,14 @@
             </h4>
             <!-- tour-info -->
             <div class="tour-info">
-              <p class="tour-country"><span class="tour-icon"><i class="fas
-                    fa-map"></i></span>Hong kong</p>
+              <p class="tour-country">
+                <span class="tour-icon"
+                  ><i
+                    class="fas
+                    fa-map"
+                  ></i></span
+                >Hong kong
+              </p>
               <div class="tour-details">
                 <p>9 Days</p>
                 <p>from 3500$</p>
@@ -156,7 +229,7 @@
         <!-- Single Card -->
         <article class="tour-card">
           <div class="tour-img">
-            <img src="./Images/tour-2.jpeg" class="tour-picture" alt="Swedon">
+            <img src="./Images/tour-2.jpeg" class="tour-picture" alt="Swedon" />
             <p class="tour-date">12-December-2020</p>
           </div>
           <div class="tour-footer">
@@ -165,8 +238,14 @@
             </h4>
             <!-- tour-info -->
             <div class="tour-info">
-              <p class="tour-country"><span class="tour-icon"><i class="fas
-                    fa-map"></i></span>Russia</p>
+              <p class="tour-country">
+                <span class="tour-icon"
+                  ><i
+                    class="fas
+                    fa-map"
+                  ></i></span
+                >Russia
+              </p>
               <div class="tour-details">
                 <p>8 Days</p>
                 <p>from 5100$</p>
@@ -178,7 +257,7 @@
         <!-- Single Card -->
         <article class="tour-card">
           <div class="tour-img">
-            <img src="./Images/tour-6.jpeg" class="tour-picture" alt="Swedon">
+            <img src="./Images/tour-6.jpeg" class="tour-picture" alt="Swedon" />
             <p class="tour-date">5-july-2020</p>
           </div>
           <div class="tour-footer">
@@ -187,8 +266,14 @@
             </h4>
             <!-- tour-info -->
             <div class="tour-info">
-              <p class="tour-country"><span class="tour-icon"><i class="fas
-                    fa-map"></i></span>India</p>
+              <p class="tour-country">
+                <span class="tour-icon"
+                  ><i
+                    class="fas
+                    fa-map"
+                  ></i></span
+                >India
+              </p>
               <div class="tour-details">
                 <p>14Days</p>
                 <p>from 5000$</p>
@@ -203,25 +288,123 @@
         <a href="#" class="btn-main">ALL tours</a>
       </div>
     </section>
-  <!-- End Of Tour -->
+    <!-- End Of Tour -->
     <!-- Our Gallery -->
     <section class="gallery" id="gallery">
       <!-- title -->
       <div class="title-wrapper changecolor">
         <h2 class="title">Our<span class="subtitle">gallery</span></h2>
       </div>
-      <!-- single img -->
-      <article class="galery-img">
-
-      </article>
-<!-- End Of single image -->
-
       <!-- End OF title -->
+
+      <!-- single img -->
+      <div class="gallery-center">
+        <div class="gallery-img-contain">
+          <img src="./Images/tour-1.jpeg" class="gallery-img" alt="" />
+          <span class="gallery-icon"><i class="fas fa-search"></i></span>
+        </div>
+
+        <!-- End Of single image -->
+        <!-- single img -->
+
+        <div class="gallery-img-contain">
+          <img src="./Images/tour-2.jpeg" class="gallery-img" alt="" />
+          <span class="gallery-icon"><i class="fas fa-search"></i></span>
+        </div>
+
+        <!-- End Of single image -->
+        <!-- single img -->
+
+        <div class="gallery-img-contain">
+          <img src="./Images/tour-3.jpeg" class="gallery-img" alt="" />
+          <span class="gallery-icon"><i class="fas fa-search"></i></span>
+        </div>
+
+        <!-- End Of single image -->
+        <!-- single img -->
+
+        <div class="gallery-img-contain">
+          <img src="./Images/tour-4.jpeg" class="gallery-img" alt="" />
+          <span class="gallery-icon"><i class="fas fa-search"></i></span>
+        </div>
+
+        <!-- End Of single image -->
+        <!-- single img -->
+        <div class="gallery-img-contain">
+          <img src="./Images/tour-5.jpeg" class="gallery-img" alt="" />
+          <span class="gallery-icon"><i class="fas fa-search"></i></span>
+        </div>
+        <!-- Single image -->
+        <div class="gallery-img-contain">
+          <img src="./Images/tour-6.jpeg" class="gallery-img" alt="" />
+          <span class="gallery-icon"><i class="fas fa-search"></i></span>
+        </div>
+        <!-- End Of sngle Image -->
+      </div>
     </section>
     <!-- End Of Our Gallery -->
-    <!-- End Of Our Gallery -->
-    <!-- End Of Our Gallery -->
-
-  
-      </body>
-    </html>
+    <!-- Deals -->
+    <section class="deals" id="deals">
+      <!-- title -->
+      <div class="title-wrapper">
+        <h2 class="title">Hot<span class="subtitle">Deals</span></h2>
+      </div>
+      <!-- End OF title -->
+      <form action="https://formspree.io/mnqvobar" method="POST">
+        <div class="input-group">
+          <input
+            type="email"
+            class="form-control"
+            name="email"
+            placeholder="Your Email"
+            id=""
+          />
+          <button type="submit" class="btn-submit">Submit</button>
+        </div>
+      </form>
+    </section>
+    <!-- End Of Deals -->
+    <!-- Footer -->
+    <footer class="footer section" id="footer">
+      <div class="nav-footer">
+        <a href="#home" class="footer-links scroll-link">Home</a>
+        <a href="#about" class="footer-links scroll-link">About</a>
+        <a href="#services" class="footer-links scroll-link">Services</a>
+        <a href="#featured" class="footer-links scroll-link">Feature</a>
+        <a href="#gallery" class="footer-links scroll-link">Gallery</a>
+      </div>
+      <div class="social-icons">
+        <!-- Social Icon -->
+        <a href="https://www.facebook.com/" target="_blank" class="social-icon"
+          ><i class="fab fa-facebook"></i
+        ></a>
+        <!-- End Of Sovial Icon -->
+        <!-- Social Icon -->
+        <a
+          href="https://twitter.com/nikhil7451"
+          target="_blank"
+          class="social-icon"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <!-- End Of Sovial Icon -->
+        <!-- Social Icon -->
+        <a
+          href="https://www.linkedin.com/in/nikhil-goel-b74948154/"
+          target="_blank"
+          class="social-icon"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <!-- End Of Sovial Icon -->
+      </div>
+      <!-- Copyright -->
+      <p class="copyright">
+        Copyright &copy; Backroads Travel Tours Company
+        <span id="date"></span>.All Rights Reserved
+      </p>
+      <!-- Copyright -->
+    </footer>
+    <!-- End Of Footer -->
+    <!-- JAvascript -->
+    <script src="./app.js"></script>
+  </body>
+</html>
